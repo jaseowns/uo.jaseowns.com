@@ -43,6 +43,7 @@ header nav ul li
 {
   display: inline;
   padding-left: 1em;
+  vertical-align: middle;
 }
 
 div {

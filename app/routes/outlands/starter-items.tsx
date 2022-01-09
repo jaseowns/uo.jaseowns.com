@@ -264,8 +264,9 @@ const skillStarterItems: IStarterSkill[] = [
 
 export let meta: MetaFunction = () => {
   return {
-    title: "Jaseowns Ultima Online Resources",
-    description: "Jaseowns.com is the online dumping ground of Jason Ramsey. He's a developer, gamer, husband and father who has been a nerd owning people on the internet since dial up."
+    title: "UO Outlands Starting Items by Skill",
+    description: "This page breaks down what items each skill grants you when creating a new character on UO Outlands.",
+    "og:image": "https://uo.jaseowns.com/images/meta-data/outlands/starter-items.png"
   };
 };
 

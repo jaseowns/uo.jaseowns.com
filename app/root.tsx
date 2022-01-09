@@ -47,7 +47,7 @@ function Document({
       <header>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/"><img src="/images/sword-jase.png"/></a></li>
             <li><a href="/builder">UO Outlands Template Builder</a></li>
             <li><a href="/outlands/starter-items">Starter Items</a></li>
           </ul>
