@@ -297,11 +297,12 @@ export default function Index() {
       {skillStarterItems.map(skill => {
         return <div key={`skills_key_${skill.name}`} className={"starter-skill-item-container"}>
 
-          <b>{skill.name} <i>({skill.stats.map((stat, index) => {
+          {/* <b>{skill.name} <i>({skill.stats.map((stat, index) => {
             var extra = index > 0 ? "/" : "";
             return `${extra}${stat}`;
-          })})</i></b>
+          })})</i></b> */}
           
+          <b>{skill.name}</b>
 
           {skill.items.length > 0 ? 
 
@@ -309,7 +310,7 @@ export default function Index() {
               {item}
 
         </div>)
-    :   <div className={"no-items"}>no items</div>
+    :   <div className={"no-items"}>none</div>
         }
         </div>
       })}
