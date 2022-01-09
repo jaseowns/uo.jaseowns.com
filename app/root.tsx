@@ -50,6 +50,7 @@ function Document({
             <li><a href="/"><img src="/images/sword-jase.png"/></a></li>
             <li><a href="/builder">UO Outlands Template Builder</a></li>
             <li><a href="/outlands/starter-items">Starter Items</a></li>
+            <li><a href="/razor/hues">Razor Hues List</a></li>
           </ul>
         </nav>
       </header>

@@ -1,0 +1,26 @@
+.hue-example {
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    padding: 1em;
+}
+
+.default {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 25px;
+    height: 25px;
+    padding:0;
+}
+
+.hue-value {
+    width: 100%;
+    padding: 0.2em;
+    background-color: #000;
+    border: 0;
+    color: #FFF;
+    border:0;
+    background: unset;
+    text-shadow: 1px 1px #000;
+
+}
