@@ -1,0 +1,169 @@
+.skill-container-top input {
+    position: relative;
+    top: 3px;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    overflow: hidden;
+    text-align: center;
+    font-weight:bold;
+    color: #5a4a31;
+}
+
+select, input, button {
+    padding: .5em;
+}
+
+body {
+    background-color: black;
+}
+
+.skill-container-top { 
+    width: 345px; height: 37px; background-repeat: no-repeat; background-image: url("/images/scroll_top.png"); padding: 0; margin: 0;
+    
+}
+
+.content {
+    background-image: url("/images/uo-background-chest.png");
+    background-repeat: no-repeat;
+    background-position-y: top; 
+    background-position-x: center; 
+    min-height: 450px;
+
+}
+
+.skill-container-mid { width: 275px; background-repeat: repeat-y; background-image: url("/images/scroll_mid_top.png"), url("/images/scroll_mid_bot.png");}
+.skill-container-bot { 
+    width: 324px; height: 34px; background-image: url("/images/scroll_bot.png"); 
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    margin-left: .7em;
+}
+
+.skill-row {
+    padding:0;
+    margin:0;
+    text-align: left;
+    min-width:300;
+}
+
+.skill-row.totals {
+    border-top: 1px solid #5a4a31;
+    margin-top: .5em;
+    padding-top: .5em;
+}
+
+.skill-row .name {
+    display: inline-block;
+    text-align: left;
+}
+.skill-row .value {
+    float: right;
+    width: 50px;
+    color: #5a4a31;
+    border: 0;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+
+
+}
+
+.skill-row .value.invalid {
+    color: red;
+}
+
+.skill-container {
+    color: #5a4a31;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-left: 1.3em;
+    
+   
+}
+
+.skill-and-bonus-container {
+    display: flex;
+    flex-direction: row;
+}
+.bonus-scroll-container {
+    display: inline-block;
+}
+.bonus-container {
+    display: block;
+}
+
+span.bonus-row {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    min-height: 25px;
+}
+
+span.bonus-row:hover {
+    background-color: #5a4a31;
+}
+
+.bonus-header span, .bonus-row span {
+    float: left;
+    padding: .1em;
+    margin: 0 .5em 0 .5em;
+    min-width: 105px;
+}
+
+.bonus-header span.name, .bonus-row span.name {
+    text-align: right;
+    border: 0;
+}
+
+.bonus-header, .bonus-row {
+    clear: both;
+    display: block;
+    padding-top: .5em 0;
+   
+ }
+
+.share-link {
+    font-size: 10px;
+}
+
+
+.pastey textarea {
+
+        width: 400px;
+        border: 2px solid gray;
+        background-color: #5a4a31;
+        color: #FFF;
+
+}
+
+.skill-bar select {
+        width: 200px;
+}
+
+.skill-bar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+.skill-faq {
+ background-color: rgba(0,0,0,.5);   
+ text-align: left;
+ clear: both;
+}
+.skill-templates a {
+    color: #FFF;
+    padding: .5em;
+    margin: .5em;
+    background-color: rgba(0,0,0,.5);
+}
+
+.description {
+    display:none;
+}
+
+.skill-templates a:hover {
+    background-color: rgba(0,0,0,1);
+}

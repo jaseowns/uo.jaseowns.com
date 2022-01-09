@@ -1,0 +1,58 @@
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.text-colors {
+  color: #242124;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body {
+    background-color: #1a191c;
+    font-family: Rubik,system-ui;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: silver;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #FFF;
+}
+
+
+.break {
+  background-color: #17161a;
+}
+
+header nav ul
+{
+  display: inline;
+}
+
+header nav ul li
+{
+  display: inline;
+  padding-left: 1em;
+}
+
+div {
+  /*background-color: #312d31*/
+}
+
+footer {
+  text-align: center;
+  color: #ccc;
+  padding-top: 80px;
+}
+
+
