@@ -4,6 +4,18 @@ import { Link } from "react-router-dom";
 
 import stylesUrl from "../../styles/starter-items.css";
 
+interface ISkillKey
+{
+  name: string
+  value: string
+}
+
+interface IStarterTemplate
+{
+  name: string
+  items: string[]
+  skills: ISkillKey[]
+}
 
 interface IStarterSkill 
 {
@@ -11,6 +23,83 @@ interface IStarterSkill
   items: string[]
   stats: string[]
 }
+
+const skillTemplates: IStarterTemplate[] = [
+  {
+    name: 'Bard',
+    items: ['Random Instrument x4', 'SpellBook (8 spells)', 'Spellstone x250'],
+    skills: [
+      { name: "Musicianship", value: "50"},
+      { name: "Discordance", value: "50"},
+      { name: "Peacemaking", value: "50"},
+      { name: "Provocation", value: "50"},
+      { name: "Magery", value: "50"},
+    ]
+  },
+  {
+    name: 'Blacksmith',
+    items: ['Tongs x2', 'Pickaxe x4', 'TinkerTools x3', 'Maul'],
+    skills: [
+      { name: "Blacksmith", value: "50"},
+      { name: "Tinkering", value: "50"},
+      { name: "Mining", value: "50"},
+      { name: "Macing", value: "50"}
+    ]
+  },
+  {
+    name: 'Lumberjack',
+    items: ['Hatchet x5', 'Saw x4', 'Skillet', 'Axe', 'Maul'],
+    skills: [
+      { name: "Lumberjacking", value: "50"},
+      { name: "Carpentry", value: "50"},
+      { name: "Camping", value: "50"},
+      { name: "Swords", value: "50"}
+    ]
+  },
+  {
+    name: 'Mage',
+    items: ['SpellBook (8 spells)', 'Spellstone x750'],
+    skills: [
+      { name: "Magery", value: "50"},
+      { name: "Meditation", value: "50"},
+      { name: "EvalInt", value: "50"},
+      { name: "Wrestling", value: "50"}
+    ]
+  },
+  {
+    name: 'Ranger',
+    items: ['Bow', 'Arrow x500', 'Bandage x150', 'Hatchet x2', 'Saw', 'Axe'],
+    skills: [
+      { name: "Archery", value: "50"},
+      { name: "Tracking", value: "50"},
+      { name: "Healing", value: "50"},
+      { name: "Lumberjacking", value: "25"},
+      { name: "Carpentry", value: "25"}
+    ]
+  },
+  {
+    name: 'Tamer',
+    items: ['Bandage x350', 'ShepherdsCrook'],
+    skills: [
+      { name: "AnimalTaming", value: "50"},
+      { name: "AnimalLore", value: "50"},
+      { name: "Veterinary", value: "50"},
+      { name: "Herding", value: "50"}
+    ]
+  },
+  {
+    name: 'Warrior',
+    items: ['WarFork', 'Mace', 'Longsword', 'WoodenShield', 'Bandage x150'],
+    skills: [
+      { name: "Fencing", value: "50"},
+      { name: "Macing", value: "50"},
+      { name: "Swords", value: "50"},
+      { name: "Tactics", value: "50"},
+      { name: "Parry", value: "50"},
+      { name: "Healing", value: "50"},
+    ]
+  },
+]
 
 const skillStarterItems: IStarterSkill[] = [
   {
@@ -283,6 +372,50 @@ export default function Index() {
 
   return (
     <div style={{ textAlign: "center", padding: 20 }}>
+
+      <h2>UO Outlands Starting Templates</h2>
+
+      
+      <div className={"parent-template"}>
+
+      <div className={"starter-skill-item-container"}>
+        <b>Template Selection</b>
+        <div>Bard: 250 skill points</div>
+        <div>Blacksmith: 200 skill points</div>
+        <div>Lumberjack: 200 skill points</div>
+        <div>Mage: 200 skill points</div>
+        <div>Ranger: 200 skill points</div>
+        <div>Tamer: 200 skill points</div>
+        <div>Warrior: 300 skill points</div>
+      </div>
+
+      {skillTemplates.map(template => {
+        return <div key={`template_key_${template.name}`} className={"starter-skill-item-container"}>
+
+          {/* <b>{skill.name} <i>({skill.stats.map((stat, index) => {
+            var extra = index > 0 ? "/" : "";
+            return `${extra}${stat}`;
+          })})</i></b> */}
+          
+          <b>{template.name}</b>
+
+
+          {template.skills.map((item, index) => <div key={`template_skills_key_${index}`}>
+              {item.name} {item.value}
+          </div>)}
+          <b></b>
+          {template.items.length > 0 ? 
+
+        template.items.map((item, index) => <div key={`template_items_key_${index}`} className={`item-icon icon_${item.split(" ")[0]}`}>
+              {item}
+
+        </div>)
+    :   <div className={"no-items"}>none</div>
+        }
+        </div>
+      })}
+      </div>
+
       <h2>UO Outlands Starting Items by Skill</h2>
 
       {/* <div className={"starter-skill-item-container example"}>
