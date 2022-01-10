@@ -1,5 +1,4 @@
-import { useLoaderData } from "remix";
-import { Link, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, Link  } from "remix";
 import React, {useCallback} from "react";
 import { useQueryString, setLinkQueryString } from "../utils/querystring";
 // import "../scss/SkillBuilder.scss"
@@ -27,7 +26,12 @@ export default function Index() {
 
   return (
     <div style={{ textAlign: "center", padding: 20 }} className="content">
-      <SkillBuilder />
+       Coming soon.. having issues on deployment to Vercel
+       <hr />
+       <h1>Example...</h1>
+       <img src={"/images/meta-data/skill-builder.png"} />
+
+      {/* <SkillBuilder /> */}
     </div>
   );
 }

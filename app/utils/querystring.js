@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from "remix";
 
 export const useQueryString = () => {
     return new URLSearchParams(useLocation().search);

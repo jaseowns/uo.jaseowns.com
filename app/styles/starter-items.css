@@ -1,4 +1,4 @@
-/* .parent {
+.parent {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -151,4 +151,4 @@
     border: 1px solid gold;
     padding: 1em;
     max-width: 150px;
-} */
+}
